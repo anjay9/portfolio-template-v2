@@ -1,0 +1,225 @@
+html{
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  margin:0;
+  font-size:0;
+  /* Background pattern from Toptal Subtle Patterns */
+  background-image:url("../images/background.png");
+}
+#container{
+  position:relative;
+  left:0;
+  right:0;
+  background-color:#FFE9D3;
+  width:100%;
+  margin:0;
+}
+#left_shadow{
+  display:none;
+  position:absolute;
+  background-image: linear-gradient(to right, rgba(0,0,0,0) , black);
+  left:-7%;
+  width:7%;
+  height:100%;
+}
+#right_shadow{
+  display:none;
+  position:absolute;
+  background-image: linear-gradient(to left, rgba(0,0,0,0) , black);
+  right:-7%;
+  width:7%;
+  height:100%;
+}
+#header{
+  position:relative;
+  width:100%;
+}
+#header_background{
+  display:none;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:30%;
+  right:0;
+  /* Background pattern from Toptal Subtle Patterns */
+  background-image:url(../images/header_background.png);
+  background-size:5%;
+  border-left:2px solid black;
+}
+#header_photo_container{
+  position:relative;
+}
+#header_photo{
+  width:100%;
+}
+#header_shadow{
+  position:absolute;
+  background:linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+  height:10%;
+  bottom:0;
+  width:100%;
+}
+#header_text{
+  position:absolute;
+  text-align:center;
+  left:0;
+  right:0;
+  color:#FFE9D3;
+  bottom:12px;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+}
+#header_title{
+  width:100%;
+  font-size:9vw;
+}
+#header_contact{
+  width:100%;
+  font-size:5vw;
+}
+.paragraph{
+  padding-top:12px;
+  padding-bottom:12px;
+  padding-left:5%;
+  padding-right:5%;
+  font-size:20px;
+}
+.project_text .paragraph{
+  font-size:0;
+}
+#project_container{
+  position:relative;
+  width:94%;
+  font-size:0;
+  padding-left:3%;
+  padding-right:3%;
+}
+.project{
+  width:96%;
+  background-image:url(../images/header_background.png);
+  background-size:5%;
+  margin-bottom:2%;
+  margin-top:2%;
+  margin-left:2%;
+  margin-right:2%;
+  cursor:pointer;
+  border-top-left-radius:25px;
+  border-top-right-radius:25px;
+  border-bottom-left-radius:20px;
+  border-bottom-right-radius:20px;
+  padding-top:2%;
+}
+.project_image{
+  width:96%;
+  padding-top:96%;
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  border-radius:20px;
+  margin-left:2%;
+  margin-right:2%;
+}
+.project_text{
+  font-size:20px;
+  width:100%;
+  color:#FFE9D3;
+}
+.project_title{
+  font-size:20px;
+  text-align:center;
+}
+.project_date{
+  font-size:12px;
+  text-align:center;
+  margin-top:10px;
+  font-style:italic;
+}
+.project_description{
+  margin-top:10px;
+  margin-bottom:5px;
+  font-size:15px;
+}
+#footer{
+  width:100%;
+  background-color:rgba(20,0,0,0.1);
+  margin-top:2%;
+}
+@media screen and (min-width:500px){
+  #container{
+    left:7%;
+    right:7%;
+    width:86%;
+  }
+  #left_shadow{
+    display:block;
+  }
+  #right_shadow{
+    display:block;
+  }
+  .project{
+    display:inline-block;
+    width:46%;
+    vertical-align:top;
+    padding-top:0;
+  }
+  .project_image{
+    margin-top:2%;
+  }
+  .project_description{
+    margin-bottom:10px;
+  }
+}
+@media screen and (min-width:700px){
+  #header{
+    background-color:#212121;
+  }
+  #header_background{
+    display:block;
+  }
+  #header_photo_container{
+    position:relative;
+    width:30%;
+  }
+  #header_text{
+    position:absolute;
+    text-align:center;
+    vertical-align:center;
+    left:30%;
+    right:0;
+    color:#FFE9D3;
+    bottom:20%;
+    text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+  }
+  #header_title{
+    font-size:calc(5px + 4vw);
+  }
+  #header_contact{
+    font-size:calc(5px + 3vw);
+  }
+  .paragraph{
+    font-size:22px;
+  }
+  .project_title{
+    font-size:22px;
+  }
+}
+@media screen and (min-width:1000px){
+  #container{
+    left:15%;
+    right:15%;
+    width:70%;
+  }
+  .paragraph{
+    padding-left:10%;
+    padding-right:10%;
+    font-size:24px;
+  }
+  .project_title{
+    font-size:24px;
+  }
+  #project_container{
+    padding-left:8%;
+    padding-right:8%;
+    width:84%;
+  }
+}
